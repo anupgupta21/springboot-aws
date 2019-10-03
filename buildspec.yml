@@ -2,6 +2,9 @@
 
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+        java: 1.8
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
@@ -15,4 +18,4 @@ phases:
     - mv target/deploy ./
 artifacts:
   files:
-    - deploy/**/*
+    - deploy/**/* 
