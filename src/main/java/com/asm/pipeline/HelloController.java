@@ -22,7 +22,7 @@ public class HelloController {
 	@GetMapping("/getUserDetails/{username}")  // API_08
 	@ResponseBody
 	public String getUserDetails(@PathVariable("username") String username) {
-		return "My Name is "+username;
+		return "My Name is "+username+ "Sister is priyanshi";
 	}
 
 }
